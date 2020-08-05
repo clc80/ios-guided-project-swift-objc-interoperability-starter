@@ -8,12 +8,17 @@
 
 import Foundation
 
-class Contact {
+// This puts objc everywhere with drawbacks
+//@objcMembers
+
+// Conforming to NSObject adds it to objective-C
+class Contact: NSObject {
     
-    var name: String
-    var relationship: String?
+    @objc var name: String
+    @objc var relationship: String?
     
-    init(name: String, relationship: String? = nil) {
+    // adding @objc will add it as objective-C
+    @objc init(name: String, relationship: String? = nil) {
         self.name = name
         self.relationship = relationship
     }
