@@ -11,10 +11,10 @@ import Foundation
 class Contact {
     
     var name: String
-    var relationships: Strng?
+    var relationship: String?
     
     init(name: String, relationship: String? = nil) {
         self.name = name
-        self.relationships = relationships
+        self.relationship = relationship
     }
 }
