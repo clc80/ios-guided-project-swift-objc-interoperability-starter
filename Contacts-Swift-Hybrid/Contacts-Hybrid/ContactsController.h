@@ -16,5 +16,10 @@ NS_SWIFT_NAME(ContactsController)
 
 @property (nonatomic, readonly, copy, nonnull) NSArray<LSIContact *> *contacts;
 
+// Returns the contact at a specified index
+- (nonnull LSIContact *)contactAtIndex:(NSInteger)index;
+
+// Will return the number of contacts
+@property (nonatomic, readonly) NSInteger contactCount;
 
 @end
