@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@class Contact;
+@class LSIContact;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -16,7 +16,7 @@ NS_SWIFT_NAME(ContactsController)
 
 @interface LSIContactsController : NSObject
 
-@property (nonatomic, readonly, copy) NSArray<Contact *> *contacts;
+@property (nonatomic, readonly, copy) NSArray<LSIContact *> *contacts;
 
 
 @end
